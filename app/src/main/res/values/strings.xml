@@ -3,4 +3,8 @@
     <string name="app_welcome_text">Witaj w aplikacji</string>
     <string name="random_dog_button">Pokaż zdjęcie losowego psa</string>
     <string name="dogs_list_button">Wybierz listę psów</string>
+    <string name="dogs_list_text_view">Lista ras jeszcze niedostępna</string>
+    <string name="random_dog_text_view">Wylosowałeś rasę</string>
+    <string name="random_dog_race">Rasa psa</string>
+    <string name="random_dog_again_button">Losuj jeszcze raz</string>
 </resources>
