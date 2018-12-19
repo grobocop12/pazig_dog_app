@@ -12,15 +12,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginBottom="16dp" android:id="@+id/button2"
-            app:layout_constraintTop_toBottomOf="@+id/textView6" app:layout_constraintHorizontal_bias="0.5"/>
+            android:layout_marginBottom="16dp" android:id="@+id/get_dog_button"
+            app:layout_constraintTop_toBottomOf="@+id/raceTextView" app:layout_constraintHorizontal_bias="0.5"
+    />
     <TextView
             android:text="@string/random_dog_race"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
-            android:id="@+id/textView6" app:layout_constraintTop_toBottomOf="@+id/textView7"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/button2"
+            android:id="@+id/raceTextView" app:layout_constraintTop_toBottomOf="@+id/textView7"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/get_dog_button"
             android:textAlignment="center" android:textSize="18sp"/>
     <TextView
             android:text="@string/random_dog_text_view"
@@ -28,7 +29,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/textView7" app:layout_constraintTop_toBottomOf="@+id/dogImageView"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/textView6"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBottom_toTopOf="@+id/raceTextView"
             android:textAlignment="center"/>
     <ImageView
             android:layout_width="match_parent"
