@@ -33,7 +33,7 @@
             android:textAlignment="center"/>
     <ImageView
             android:layout_width="match_parent"
-            android:layout_height="300dp" app:srcCompat="@android:color/black"
+            android:layout_height="400dp" app:srcCompat="@android:color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" android:id="@+id/dogImageView"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintHorizontal_bias="0.0"
