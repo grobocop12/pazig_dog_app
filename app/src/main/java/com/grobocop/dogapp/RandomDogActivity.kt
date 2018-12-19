@@ -28,9 +28,6 @@ class RandomDogActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_random_dog)
 
-
-
-
         getRandomDogImage()
 
         val button = findViewById<Button>(R.id.get_dog_button)
@@ -66,10 +63,12 @@ class RandomDogActivity : AppCompatActivity() {
         val dogImageView = findViewById<ImageView>(R.id.dogImageView)
         val url = response.getString("message")
         val race = url.split('/')[url.split('/').count()-2]
+
         Glide
             .with(this)
             .load(url)
             .into(dogImageView)
+
         val raceTextView = findViewById<TextView>(R.id.raceTextView)
         raceTextView.text = race
     }
