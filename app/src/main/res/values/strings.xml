@@ -7,4 +7,5 @@
     <string name="random_dog_text_view">Wylosowałeś rasę</string>
     <string name="random_dog_race">Rasa psa</string>
     <string name="random_dog_again_button">Losuj jeszcze raz</string>
+    <string name="list_item_button">Losuj psa tej rasy</string>
 </resources>

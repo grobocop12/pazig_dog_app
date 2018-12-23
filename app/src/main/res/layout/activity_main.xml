@@ -13,8 +13,9 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent"
             android:id="@+id/random_dog_button" app:layout_constraintStart_toEndOf="@+id/dogs_list_button"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBaseline_toBaselineOf="@+id/dogs_list_button"
-            android:textAlignment="center" android:textSize="10sp"/>
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBaseline_toBaselineOf="@+id/dogs_list_button"
+            android:textAlignment="center" android:textSize="12sp"/>
     <Button
             android:text="@string/dogs_list_button"
             android:layout_width="wrap_content"

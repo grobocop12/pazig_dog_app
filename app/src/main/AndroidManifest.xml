@@ -19,9 +19,14 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".DogsListActivity">
+        <activity android:name=".DogsListActivity"
+        android:parentActivityName=".MainActivity">
         </activity>
-        <activity android:name=".RandomDogActivity">
+        <activity android:name=".RandomDogActivity"
+        android:parentActivityName=".MainActivity">
+        </activity>
+        <activity android:name=".RandomDogByBreedActivity"
+        android:parentActivityName=".DogsListActivity">
         </activity>
     </application>
 

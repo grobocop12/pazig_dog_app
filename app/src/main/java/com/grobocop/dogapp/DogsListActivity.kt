@@ -2,11 +2,7 @@ package com.grobocop.dogapp
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutCompat
 import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
-import android.support.v7.widget.RecyclerView.LayoutManager
-import android.util.JsonReader
 import com.android.volley.Request
 import com.android.volley.RequestQueue
 import com.android.volley.Response
@@ -16,7 +12,6 @@ import com.android.volley.toolbox.HurlStack
 import com.android.volley.toolbox.JsonObjectRequest
 import kotlinx.android.synthetic.main.activity_dogs_list.*
 import org.json.JSONObject
-import java.io.StringReader
 
 class DogsListActivity : AppCompatActivity() {
 
@@ -37,10 +32,8 @@ class DogsListActivity : AppCompatActivity() {
 */
         requestDogBreeds(dogs)
 
-
-        val adapter = DogAdapter(dogs)
+        val adapter = DogAdapter(dogs, this.baseContext)
         rv_dogs_list.layoutManager = LinearLayoutManager(this)
-
         rv_dogs_list.adapter = adapter
 
     }
@@ -92,7 +85,7 @@ class DogsListActivity : AppCompatActivity() {
             }
         }
 
-        val adapter = DogAdapter(dogList)
+        val adapter = DogAdapter(dogList, this.baseContext)
         rv_dogs_list.layoutManager = LinearLayoutManager(this)
         rv_dogs_list.adapter = adapter
     }
@@ -103,7 +96,7 @@ class DogsListActivity : AppCompatActivity() {
         val requestQueue = RequestQueue(cache, network).apply {
             start()
         }
-        var image =""
+        var image = ""
         val jsonObjectRequest = JsonObjectRequest(
             Request.Method.GET, dogListURL, null,
             Response.Listener { response ->
