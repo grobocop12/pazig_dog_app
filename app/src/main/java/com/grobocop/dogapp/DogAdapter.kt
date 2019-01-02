@@ -57,6 +57,8 @@ class DogAdapter(val items: ArrayList<Dog>, private val context: Context) : Recy
             .with(p0.imView.context)
             .load(response.getString("message"))
             .into(p0.imView)
+
+
     }
 
     fun randomDogButtonClicked(dog: Dog) {
